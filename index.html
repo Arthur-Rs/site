@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Link para o Bootstrap na pasta especificada abaixo! -->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+        <!--navbar é padrao para fazer uma navbar-->
+        <!--navbar-expand-lg é para a navbar ficar extendida somente em tamanho lg, se for menor q isso vai ser recolhido
+        a navbar-->
+        <!--navbar-light é um cinza escuro que vai dar constraste no bg-light que é um cinza claro do navbar
+        tem tbm o  navbar-dark bg-dark 
+        e o  navbar-dark bg-primary, entre outros-->
+        <!--pelo o que eu entendi funciona assim 
+
+        pelo o que eu entendi é recomendável usar o navbar-dark ou navbar-light e depois
+        .bg-primary, azul
+        .bg-success, verde
+        .bg-info, azul oceano
+        .bg-warning, amarelo
+        .bg-danger, vermelho
+        .bg-secondary, cinza
+        .bg-dark cinza mais escuro
+        .bg-light cinza claro
+        -->
+        <!--navbar-fixed-top ela fica fixa no topo-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-danger navbar-fixed-top">
+         <div class="container"><!--Só para alinhar o navbar, se eu colocasse o container fora do navbar iria limitar a cor do navbar
+        -->
+         <!--navbar-brand é aquele nome em destaque que fica do lado esquerdo do navbar-->
+         <!--eu posso colocar do h1 ao h6 se me lembro para aumentar o tamanho da letra-->
+         <!--o mb-0 tira a margin extra que é criada de cima para baixo, no caso é criada a margin extra pq eu aumentei
+        o tamanho da letra,porém notei q n ficou alinhado entao usei mb-1-->
+        <a class="navbar-brand h2 mb-1" href="#">Curso</a>
+        <!--botao para recolher ou nao o meu menu, no data-target vou colocar o id da minha navbar para o button
+        expandir ou nao o menu-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+            <!--aqui vai o icone do botao-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--aqui é o menu da navbar, eu coloco o id de onde o menu vai ficar-->
+        <div class="collapse navbar-collapse" id="navbarSite">
+            <!--esse mr-auto quer dizer para ficar o menu na esquerda-->
+            <ul class="navbar-nav mr-auto"><!--criação do menu mobile-->
+                <li class="nav-item"> <!--aqui é para colocar os items do menu-->
+                    <!--Pelo o que eu entendi o nav-link é para ser um link, porém sem o sublinhado em baixo-->
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Depoimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contatos</a>
+                </li>
+                
+            </ul>
+            <!--o ml-auto é para ficar o menu na esquerda-->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown"><!--menu de dropdown, ou seja é aquele com a flechinha que vc clica
+                e aparece o menu-->
+                <!--aqui é aquela palavra clicavel para descer o menu-->
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">
+                        Social
+                    </a>
+                    <!--menu do dropdown-->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Facebook</a>
+                        <a class="dropdown-item" href="#">Twitter</a>
+                        <a class="dropdown-item" href="#">Instagram</a>
+                    </div>
+                </li>
+            </ul>
+
+            <!--form-inline para ocupar apenas uma linha se nao ele fica block-->
+            <form class="form-inline">
+                <!--type search pq é para pesquisar-->
+                <!--ml-4 da um espaçamento para a esquerda e vai até 5, e mr vai para direita e vai até 5-->
+                <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+                <!--type Submit pq é de enviar-->
+                <button class="btn btn-dark " type="Submit">Ok</button>
+            </form>
+        </div>
+    </div> <!--container-->
+     </nav>
+    </div><!--container-->
+  </body>
+</html>
